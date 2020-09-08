@@ -1,20 +1,34 @@
+/**
+ * Print all the numbers between start and end (using a for loop)
+ * @param {number} start the starting number
+ * @param {number} end the ending number
+ */
 function printNumbers(start, end) {
-  for (let numbers = start; numbers <= end; numbers++) {
-    console.log(numbers);
+  // set up for loop. while number is less than the ending number,
+  // continue the loop and increase the number count
+  for (let number = start; number <= end; number++) {
+    console.log(number);
   }
 }
 
 printNumbers(10, 20);
 
-
+/**
+ * Print all the numbers between start and end (using a while loop)
+ * @param {number} start the starting number
+ * @param {number} end the ending number
+ */
 function printNumbersWhile(start, end) {
-  let numbers = start;
-  while (numbers <= end) {
-    console.log(numbers);
-    numbers++;
-    // numbers = numbers + 1;
-    // numbers += 1;
+  // set the starting number to 'start'
+  let number = start;
+  // while number is less than the end
+  while (number <= end) {
+    console.log(number);
+    number++;
+    // ^ same as: numbers = numbers + 1;
+    // ^ same as: numbers += 1;
   }
 }
 
+// call the function
 printNumbersWhile(10, 20);
